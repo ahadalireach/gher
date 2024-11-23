@@ -89,11 +89,7 @@ export const loginUser = async (req, res, next) => {
     const { password: _, ...userWithoutPassword } = user._doc;
 
     res
-      .cookie("access_token", token, {
-        httpOnly: true,
-        secure: true,
-        sameSite: "strict",
-      })
+      .cookie("access_token", token, { httpOnly: true })
       .status(200)
       .json(userWithoutPassword);
   } catch (error) {
@@ -111,11 +107,7 @@ export const googleSignin = async (req, res, next) => {
       const { password: _, ...userWithoutPassword } = user._doc;
 
       res
-        .cookie("access_token", token, {
-          httpOnly: true,
-          secure: true,
-          sameSite: "strict",
-        })
+        .cookie("access_token", token, { httpOnly: true })
         .status(200)
         .json(userWithoutPassword);
     }
