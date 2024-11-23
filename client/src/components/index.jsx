@@ -23,7 +23,7 @@ import UserPropertiesInfo from "./UserPropertiesInfo";
 import HomeProperties from "./HomeProperties";
 import PropertyItem from "./PropertyItem";
 import SellerInfo from "./SellerInfo";
-import PropertiesFilter from "./PropertiesFilter";
+import PropertiesFilter from "./PropertyFilter";
 import PropertyForm from "./PropertyForm";
 import ImageSwiper from "./ImageSwiper";
 import PropertyDetails from "./PropertyDetails";
